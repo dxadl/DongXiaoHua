@@ -1,0 +1,2 @@
+sudo -i
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dxadl/DongXiaoHua/master/Shell/linux-addpwd.sh)"
