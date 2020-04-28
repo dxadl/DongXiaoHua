@@ -3,7 +3,7 @@ wget --no-check-certificate -O caddy-forwardproxy.sh https://raw.githubuserconte
 chmod +x caddy-forwardproxy.sh
 ./caddy-forwardproxy.sh 2>&1 | tee caddy-forwardproxy.log
 #安装bbr加速
-wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+wget -N --no-check-certificate "https://raw.githubusercontent.com/dxadl/DongXiaoHua/master/Shell/bbr-tcp.sh" && chmod +x bbr-tcp.sh && ./bbr-tcp.sh
 #安装filebrowser
 wget --no-check-certificate -O filebrowser.sh https://raw.githubusercontent.com/JeannieStudio/jeannie/master/filebrowser.sh
 chmod +x filebrowser.sh
