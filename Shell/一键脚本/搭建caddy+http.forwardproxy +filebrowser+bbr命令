@@ -1,6 +1,6 @@
 #安装caddy+http.forward
 wget --no-check-certificate -O caddy-httpforwardproxy.sh https://raw.githubusercontent.com/dxadl/DongXiaoHua/master/Shell/caddy-httpforwardproxy.sh
-chmod +x caddy-http.forwardproxy.sh
+chmod +x caddy-httpforwardproxy.sh
 ./caddy-httpforwardproxy.sh 2>&1 | tee caddy-httpforwardproxy.log
 #安装bbr加速
 wget -N --no-check-certificate "https://raw.githubusercontent.com/dxadl/DongXiaoHua/master/Shell/bbr-tcp.sh" && chmod +x bbr-tcp.sh && ./bbr-tcp.sh
