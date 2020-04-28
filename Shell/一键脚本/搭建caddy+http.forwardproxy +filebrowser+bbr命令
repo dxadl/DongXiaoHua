@@ -1,7 +1,7 @@
 #安装caddy+http.forward
-wget --no-check-certificate -O caddy-http.forwardproxy.sh https://raw.githubusercontent.com/dxadl/DongXiaoHua/master/Shell/caddy-http.forwardproxy.sh
+wget --no-check-certificate -O caddy-httpforwardproxy.sh https://raw.githubusercontent.com/dxadl/DongXiaoHua/master/Shell/caddy-httpforwardproxy.sh
 chmod +x caddy-http.forwardproxy.sh
-./caddy-http.forwardproxy.sh 2>&1 | tee caddy-http.forwardproxy.log
+./caddy-httpforwardproxy.sh 2>&1 | tee caddy-httpforwardproxy.log
 #安装bbr加速
 wget -N --no-check-certificate "https://raw.githubusercontent.com/dxadl/DongXiaoHua/master/Shell/bbr-tcp.sh" && chmod +x bbr-tcp.sh && ./bbr-tcp.sh
 #安装filebrowser
