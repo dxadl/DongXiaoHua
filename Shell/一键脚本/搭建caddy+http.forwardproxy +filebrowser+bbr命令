@@ -5,6 +5,6 @@ chmod +x caddy-httpforwardproxy.sh
 #安装bbr加速
 wget -N --no-check-certificate "https://raw.githubusercontent.com/dxadl/DongXiaoHua/master/Shell/bbr-tcp.sh" && chmod +x bbr-tcp.sh && ./bbr-tcp.sh
 #安装filebrowser
-wget --no-check-certificate -O filebrowser.sh https://raw.githubusercontent.com/JeannieStudio/jeannie/master/filebrowser.sh
+wget --no-check-certificate -O filebrowser.sh https://raw.githubusercontent.com/dxadl/DongXiaoHua/master/Shell/filebrowser.sh
 chmod +x filebrowser.sh
 ./filebrowser.sh 2>&1 | tee filebrowser.log
