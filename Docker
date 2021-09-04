@@ -28,6 +28,7 @@ jellyfin
 --restart unless-stopped
 jellyfin/jellyfin
 
+
 Homeassistant
 
 docker run --init -d
@@ -37,3 +38,25 @@ docker run --init -d
    localtime:ro 
    -p 8123:8123 
    homeassistant/home-assistant
+
+
+baidunetdisk
+
+ docker create  \
+    --name=baidunetdisk  \
+    -p 5800:5800  \
+    -p 5900:5900  \
+    -v /opt/docker/baidunetdisk:/config  \
+    -v /mnt/sdc1/download:/config/baidunetdiskdownload  \
+    -e VNC_PASSWORD=366454264
+    --restart unless-stopped  \
+    johngong/baidunetdisk:latest
+    
+    
+    
+    
+ docker run -d 
+ --name music-player
+ -p 264:264 
+ -v /tmp/music:/var/www/html/cache 
+ oldiy/music-player-docker
