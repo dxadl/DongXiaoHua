@@ -54,9 +54,20 @@ baidunetdisk
     
     
     
-    
+ music-player
+ 
  docker run -d 
  --name music-player
  -p 264:264 
  -v /tmp/music:/var/www/html/cache 
  oldiy/music-player-docker
+ 
+ 
+ aliyun
+ docker run -d 
+ --name=aliyundrive-webdav 
+ --restart=unless-stopped 
+ -p 8080:8080 
+ -e REFRESH_TOKEN='refresh token' 
+ messense/aliyundrive-webdav
+
