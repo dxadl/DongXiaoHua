@@ -68,6 +68,6 @@ baidunetdisk
  --name=aliyundrive-webdav 
  --restart=unless-stopped 
  -p 8080:8080 
- -e REFRESH_TOKEN='refresh token' 
+ -e REFRESH_TOKEN='410accfcf94e4e47a037caf792f9948f' 
  messense/aliyundrive-webdav
 
