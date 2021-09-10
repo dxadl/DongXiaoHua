@@ -1,3 +1,44 @@
+jellyfin
+
+  docker run -d
+--name jellyfin
+-v /opt/docker/jellyfin/config:/config
+-v /opt/docker/jellyfin/cache:/cache
+-v /mnt/sdc1:/media
+-e TZ="Asia/Shanghai"
+-p 6000:6000
+--device=/dev/dri/renderD128
+--restart unless-stopped
+jellyfin/jellyfin
+
+ aliyun
+ docker run -d 
+ --name=aliyundrive-webdav 
+ --restart=unless-stopped 
+ -p 6001:6001 
+ -e REFRESH_TOKEN='410accfcf94e4e47a037caf792f9948f' 
+ messense/aliyundrive-webdav
+
+music-player
+ 
+ docker run -d 
+ --name music-player
+ -p 6002:6002 
+ -v /tmp/music:/var/www/html/cache 
+ oldiy/music-player-docker
+
+baidunetdisk
+
+ docker create  \
+    --name=baidunetdisk  \
+    -p 5800:5800  \
+    -p 5900:5900  \
+    -v /opt/docker/baidunetdisk:/config  \
+    -v /mnt/sdc1/download:/config/baidunetdiskdownload  \
+    -e VNC_PASSWORD=366454264
+    --restart unless-stopped  \
+    johngong/baidunetdisk:latest
+    
 xteve
 
 docker run -d \
@@ -13,21 +54,6 @@ docker run -d \
   -v /opt/docker/tvheadend/data/:/TVH \
   -p 6004:6004
   alturismo/xteve_guide2go
-  
-  
-jellyfin
-
-  docker run -d
---name jellyfin
--v /opt/docker/jellyfin/config:/config
--v /opt/docker/jellyfin/cache:/cache
--v /mnt/sdc1:/media
--e TZ="Asia/Shanghai"
--p 6000:6000
---device=/dev/dri/renderD128
---restart unless-stopped
-jellyfin/jellyfin
-
 
 Homeassistant
 
@@ -38,36 +64,3 @@ docker run --init -d
    localtime:ro 
    -p 8123:8123 
    homeassistant/home-assistant
-
-
-baidunetdisk
-
- docker create  \
-    --name=baidunetdisk  \
-    -p 5800:5800  \
-    -p 5900:5900  \
-    -v /opt/docker/baidunetdisk:/config  \
-    -v /mnt/sdc1/download:/config/baidunetdiskdownload  \
-    -e VNC_PASSWORD=366454264
-    --restart unless-stopped  \
-    johngong/baidunetdisk:latest
-    
-    
-    
- music-player
- 
- docker run -d 
- --name music-player
- -p 264:264 
- -v /tmp/music:/var/www/html/cache 
- oldiy/music-player-docker
- 
- 
- aliyun
- docker run -d 
- --name=aliyundrive-webdav 
- --restart=unless-stopped 
- -p 6001:6001 
- -e REFRESH_TOKEN='410accfcf94e4e47a037caf792f9948f' 
- messense/aliyundrive-webdav
-
