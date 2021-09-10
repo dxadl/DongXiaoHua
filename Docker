@@ -11,7 +11,7 @@ docker run -d \
   -v /opt/docker/xteve/_guide2go/:/guide2go:rw \
   -v /tmp/xteve/:/tmp/xteve:rw \
   -v /opt/docker/tvheadend/data/:/TVH \
-  -p 34400:34400
+  -p 6004:6004
   alturismo/xteve_guide2go
   
   
@@ -23,7 +23,7 @@ jellyfin
 -v /opt/docker/jellyfin/cache:/cache
 -v /mnt/sdc1:/media
 -e TZ="Asia/Shanghai"
--p 8096:8096
+-p 6000:6000
 --device=/dev/dri/renderD128
 --restart unless-stopped
 jellyfin/jellyfin
@@ -67,7 +67,7 @@ baidunetdisk
  docker run -d 
  --name=aliyundrive-webdav 
  --restart=unless-stopped 
- -p 8080:8080 
+ -p 6001:6001 
  -e REFRESH_TOKEN='410accfcf94e4e47a037caf792f9948f' 
  messense/aliyundrive-webdav
 
