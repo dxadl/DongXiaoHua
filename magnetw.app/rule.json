@@ -3,7 +3,7 @@
     "id": "zhongzisou",
     "name": "种子搜",
     "proxy": false,
-    "url": "https://zhongzilou.proxyit.ga",
+    "url": "https://www.zhongzilou.com",
     "paths": {
       "time": "/list/{k}/{p}",
       "size": "/list_length/{k}/{p}",
