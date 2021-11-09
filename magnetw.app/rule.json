@@ -1,27 +1,5 @@
 [
   {
-    "id": "zhongzisou",
-    "name": "种子搜",
-    "proxy": false,
-    "url": "https://www.zhongzilou.com",
-    "paths": {
-      "time": "/list/{k}/{p}",
-      "size": "/list_length/{k}/{p}",
-      "hot": "/list_click/{k}/{p}"
-    },
-    "xpath": {
-      "group": "//table[@class='table table-bordered table-striped']",
-      "magnet": "./tbody/tr[1]/td/div/h4/a/@href",
-      "name": "./tbody/tr[1]/td/div/h4/a",
-      "size": "./tbody/tr/td[2]/strong",
-      "hot": "./tbody/tr[2]/td[3]/strong",
-      "date": "./tbody/tr/td[1]/strong",
-      "detail": {
-        "files": "//*[@id=\"wrapp\"]/div[2]/div/div/div[3]/div[1]/div[2]/div[2]/select/option"
-      }
-    }
-  },
-  {
     "id": "btgg",
     "name": "BTGG",
     "proxy": false,
@@ -36,67 +14,6 @@
       "size": "./div[2]/span[1]",
       "hot": "./div[2]/span[2]",
       "date": "./div[2]/span[3]"
-    }
-  },
-  {
-    "id": "idope",
-    "name": "idope",
-    "proxy": true,
-    "url": "https://idope.se",
-    "paths": {
-      "preset": "/torrent-list/{k}/?p={p}",
-      "size": "/torrent-list/{k}/?p={p}&o=-2"
-    },
-    "xpath": {
-      "group": "//div[@class=\"resultdiv\"]",
-      "magnet": "./div[1]/a/@href",
-      "name": "./div[1]/a",
-      "size": "./div[2]/div[3]/div[2]",
-      "date": "./div[2]/div[2]/div[2]",
-      "detail": {
-        "files": "//div[@class=\"filetag\"]"
-      }
-    }
-  },
-  {
-    "id": "btsow",
-    "name": "BTSOW",
-    "proxy": false,
-    "url": "https://btsow.cam",
-    "paths": {
-      "preset": "/search/{k}/page/{p}"
-    },
-    "xpath": {
-      "group": "//div[@class='row']",
-      "magnet": "./a/@href",
-      "name": "./a/div[1]",
-      "size": "./div[1]",
-      "date": "./div[2]",
-      "detail": {
-        "files": "//div[@class=\"detail data-list\"]/div/text()"
-      }
-    }
-  },
-  {
-    "id": "btdet",
-    "name": "BT蚂蚁",
-    "proxy": false,
-    "url": "https://btmayi.proxyit.ga",
-    "paths": {
-      "time": "/search/{k}-first-asc-{p}",
-      "size": "/search/{k}-size-desc-{p}",
-      "hot": "/search/{k}-hot-desc-{p}"
-    },
-    "xpath": {
-      "group": "//div[@id='wall']/div[@class='search-item']",
-      "magnet": "./div[@class='item-title']/a/@href",
-      "name": "./div[@class='item-title']/a",
-      "size": "./div[@class='item-bar']/span[4]/b",
-      "date": "./div[@class='item-bar']/span[1]/b",
-      "hot": "./div[@class='item-bar']/span[2]/b",
-      "detail": {
-        "files": "//*[@id=\"wall\"]/ol/li"
-      }
     }
   },
   {
@@ -121,29 +38,10 @@
     }
   },
   {
-    "id": "btdb",
-    "name": " BTDB",
-    "proxy": false,
-    "url": "https://btdb.proxyit.ml",
-    "paths": {
-      "time": "?s={k}&sort=time&page={p}",
-      "preset": "?s={k}&page={p}",
-      "size": "?s={k}&sort=length&page={p}"
-    },
-    "xpath": {
-      "group": "//li[@class=\"search-ret-item\"]",
-      "name": "./h2/a",
-      "magnet": "./div/a/@href",
-      "size": "./div/span[1]",
-      "date": "./div/span[3]",
-      "hot": "./div/span[4]"
-    }
-  },
-  {
     "id": "btdiguo",
     "name": "BT目录",
     "proxy": false,
-    "url": "https://btmulu3.club",
+    "url": "https://www.btmulu7.xyz",
     "paths": {
       "time": "/search-update/{k}/page-{p}.html",
       "size": "/search-size/{k}/page-{p}.html",
